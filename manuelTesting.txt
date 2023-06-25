@@ -34,37 +34,35 @@ All bots show up on button click
 
 Bug Reports:
 
-Bug Report: fail to display bots on "see all bots" button click
-Bug Report:
-bots array fails to load on home screen when ‘see all bots’ button is clicked
-Steps to reproduce:
-go to home page
-click “See All Bots”
-fails to load (inspect and check console, throws ERROR 400 Bad Request)
-Expected:
-All bots displayed on click
-Actual:
-No bots displayed
-Notes:
-All other buttons appear to work at this time. Further inspection of the getAllBots function is required
-Bug Report: Duel Wins register as loses
+1. Bug Report: fail to display bots on "see all bots" button click
+    Bug Report:
+        bots array fails to load on home screen when ‘see all bots’ button is clicked
+    Steps to reproduce:
+     go to home page
+     click “See All Bots”
+        fails to load (inspect and check console, throws ERROR 400 Bad Request)
+    Expected:
+     All bots displayed on click
+    Actual:
+     No bots displayed
+    Notes:
+        All other buttons appear to work at this time. Further inspection of the getAllBots function is required
 
-
-Bug Report:
-when a duel is won, it is added to the “loses” column
-Steps to reproduce:
-go to home page
-click “Draw”
-click “add to duo” for 2 bots
-click “duel”
-repeat process until “you won!” is displayed
-note that win is added to the “losses” column
-Expected:
-Wins registered in “wins” column
-Actual:
-Wins registered in “losses” column
-Notes:
-Process repeated many time to ensure the same result for every win. Further investigation of the duel function and resultsText.textcontent required
+2. Bug Report: Duel Wins register as loses
+    Bug Report:
+     when a duel is won, it is added to the “loses” column
+    Steps to reproduce:
+        go to home page
+        click “Draw”
+        click “add to duo” for 2 bots
+         click “duel”
+        repeat process until “you won!” is displayed note that win is added to the “losses” column
+    Expected:
+         Wins registered in “wins” column
+    Actual:
+         Wins registered in “losses” column
+    Notes:
+         Process repeated many time to ensure the same result for every win. Further investigation of the duel function and resultsText.textcontent required
 
 
 
