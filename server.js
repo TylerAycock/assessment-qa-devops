@@ -19,15 +19,12 @@ let rollbar = new Rollbar({
   captureUnhandledRejections: true,
 })
 
-// record a generic message and send it to Rollbar
+
 rollbar.log('Hello world!')
 
 //************************************************************* 
-//Hey Cam hopefully this makes finding my rollbar a bit eassier
-//my additonal rollbars are located at the following endpoints:
-//app.get api/robots to catch for fail to load
-//app.get api/robots/shuffled to log succesful loaded of bots 
-// 2 * app.post api/duel to indicate that the player won or the player lost 
+//rollbars located on lines (66, 74, 94, 98)
+ 
 
 app.get("/", (req, resp) => {
   resp.status(200).sendFile(path.join(__dirname, "/public/index.html"));
